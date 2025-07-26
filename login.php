@@ -14,7 +14,7 @@ if (isset($_POST['login'])) {
         $error = "Please enter both username and password.";
     } else {
         // Prepare statement
-        $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username = ?");
+        $stmt = $conn->prepare("SELECT id, username, password, name  FROM users WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -27,8 +27,9 @@ if (isset($_POST['login'])) {
             if (password_verify($password, $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
+                $_SESSION['name'] = $user['name'];
 
-                header("Location: dashboard.php");
+                header("Location: ./admin/dashboard.php");
                 exit;
             } else {
                 $error = "Invalid password.";

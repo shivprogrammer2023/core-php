@@ -5,7 +5,7 @@ Interview Task
 Hi,
 Kindly acknowledge the mail.
 
-Create Table using below query.
+Create Table using below query. 
 
     CREATE TABLE users (
         id INT AUTO_INCREMENT PRIMARY KEY,

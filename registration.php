@@ -52,9 +52,6 @@ if (isset($_POST['register'])) {
 
 <!-- PHP Functionality END -->
 
-
-
-
 <div class="container">
     <div class="py-1 px-2">
         <div class="row justify-content-center my-5">
