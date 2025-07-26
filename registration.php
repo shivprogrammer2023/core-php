@@ -85,7 +85,7 @@ if (isset($_POST['register'])) {
                         </form>
                     </div>
                     <div class="card-footer text-muted text-center">
-                        Already have an account? <a href="login.php">Login here</a>
+                        Already have an account? <a href="login.php">Login</a>
                     </div>
                 </div>
             </div>

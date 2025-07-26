@@ -72,6 +72,9 @@ if (isset($_POST['login'])) {
                     <div class="card-footer text-muted text-center">
                         if you don't have an account? <a href="registration.php">Registration</a>
                     </div>
+                    <div class="card-footer text-muted text-center">
+                       Forgot Password <a href="forgot-password.php">Click </a>
+                    </div>
                 </div>
             </div>
         </div>
