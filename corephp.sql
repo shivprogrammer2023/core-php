@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2025 at 02:27 PM
+-- Generation Time: Jul 26, 2025 at 10:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -35,6 +35,14 @@ CREATE TABLE `products` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `created_at`) VALUES
+(2, 'Web Developer', 'i am a senior web developer and i have 3 years experience', 2000, '2025-07-26 19:38:36'),
+(3, 'Core PHP Developer', 'Core PHP Developer for your product', 1600, '2025-07-26 19:44:58');
+
 -- --------------------------------------------------------
 
 --
@@ -55,9 +63,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `name`, `email`, `password`, `created_at`) VALUES
-(4, 'shiv', 'Shiv', 'shiv@gmail.com', '$2y$10$gEQai9KafYAVP9L6uFKhFulHfATerM3bryhURhbV8wZGdtohqrKkm', '2025-07-26 12:23:16'),
-(5, 'shivwebdeveloper', 'Shiv', 'shivprogrammer2023@gmail.com', '$2y$10$4LY0WqK5BHEwnhw3k5b3gOlx4QwyglIbRptVpaFNelCfuNjJ52v1.', '2025-07-26 12:25:24'),
-(6, 'rahi', 'Rahi', 'rahi@gmail.com', '$2y$10$7jAp56q87IuGAP46jylS8ejauZQf4Pn8lgVTqQpXyU7MryjMISDTG', '2025-07-26 12:27:26');
+(5, 'shivwebdeveloper', 'Shiv', 'shivprogrammer2023@gmail.com', '$2y$10$0/M7ZMXLsAlgaZfQ0oBU/./BKCkmq.GDy1bSzEdukUNUXFd7xJIqu', '2025-07-26 12:25:24'),
+(8, 'priya', 'Priya', 'priya@gmail.com', '$2y$10$S/DucMyMF0tL830bTcebw.jrLCXfODEvCovo/p1z9aov..nfGCd0y', '2025-07-26 18:52:07'),
+(9, 'john', 'Dilshad', 'john@gmail.com', '$2y$10$6myDmSD9S.SCmBzIn0IR6OL46j0kfRYjx/Q54GHwn8t9oVPk0g4a6', '2025-07-26 19:06:05'),
+(11, 'rahulj', 'Rahul j', 'rahulj@gmail.com', '$2y$10$tnAAohEUogB/nPhNgNdFHeEhqNdJLbjqsX026LufIV7aR3RVbmgeK', '2025-07-26 19:11:33');
 
 --
 -- Indexes for dumped tables
@@ -85,13 +94,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
